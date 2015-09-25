@@ -51,6 +51,6 @@ void mousePressed() {
 void awesome(){
  
   println("Awesome");
-  println("JC IS Awesome");
+  println("JC IS NOT Awesome");  
   
 }
