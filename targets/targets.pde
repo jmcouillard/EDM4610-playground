@@ -6,6 +6,7 @@ Target target3;
 int counter = 0;
 
 //JC was here
+// JM aussi
 
 void setup() {
   size(960, 540);
