@@ -24,7 +24,7 @@ class Target {
   }
   
   void reset() {
-    life = 0;
+    jclife = 0;
     x = mouseX;
     y = mouseY;
   }
