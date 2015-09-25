@@ -1,14 +1,14 @@
 class Target {
 
-  float x = 0;
-  float y = 0;
+  float jcx = 0;
+  float jcy = 0;
   float jclife = 0;
   color strokeColor = color(255);
 
-  Target(float xStart, float yStart) {
+  Target(float jcxStart, float jcyStart) {
     println("nouvelle target de JC");
-    x = xStart;
-    y = yStart;
+    jcx = jcxStart;
+    jcy = jcyStart;
   }
 
   void drawSelf() {
@@ -16,8 +16,8 @@ class Target {
     strokeWeight(10);
     stroke(strokeColor, 255 * (1 - jclife));
 
-    for (int i=1; i<=3; i++) {
-      ellipse(x, y, 50 * jclife * i, 50*jclife * i);
+    for (int jc=1; jc<=3; jc++) {
+      ellipse(jcx, jcy, 50 * jclife * jc, 50*jclife * jc);
     }
 
     jclife += 0.02;
@@ -25,7 +25,7 @@ class Target {
   
   void reset() {
     jclife = 0;
-    x = mouseX;
-    y = mouseY;
+    jcx = mouseX;
+    jcy = mouseY;
   }
 }
