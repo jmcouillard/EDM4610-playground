@@ -8,6 +8,8 @@ int counter = 0;
 //JC was here
 // JM aussi
 
+
+
 void setup() {
   size(960, 540);
 
@@ -17,6 +19,9 @@ void setup() {
 }
 
 void draw() {
+  
+  awesome();
+  
   background(0);  
   target1.drawSelf();
   target2.drawSelf();
@@ -39,5 +44,12 @@ void mousePressed() {
   if(counter == 3) {
     counter =0;
   }
+  
+}
+
+
+void awesome(){
+ 
+  println("Awesome");
   
 }
